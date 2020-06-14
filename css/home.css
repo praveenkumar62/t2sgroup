@@ -45,10 +45,16 @@
     margin-left: 10px;
     margin-right: 10px;
 }
-.navbar-nav .active a {
+.navbar-nav .active {
     background-color: transparent !important;
     color: red !important;
 }
+
+.nav-height {
+    margin-top: 130px;
+}
+
+/* --------------------------------------------------- */
 
 /* wallpaper */
 .main-wallpaper {
@@ -105,47 +111,8 @@
     padding: 0 30px;
 }
 
-.sub-img-animate1 {
-    animation-name: slidingImg1;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-.sub-img-animate2 {
-    animation-name: slidingImg2;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-}
-@keyframes slidingImg1 {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-50px);
-    }
-    51% {
-        transform: translateY(-50px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-@keyframes slidingImg2 {
-    0% {
-        transform: translateY(-50px);
-    }
-    50% {
-        transform: translateY(0px);
-    }
-    51% {
-        transform: translateY(0px);
-    }
-    100% {
-        transform: translateY(-50px);
-    }
-}
-
 /* About us */
-.aboutus-container .aboutus-panel {
+.aboutus-panel {
     position: relative;
     border-radius: 0;
     border-bottom: 10px solid rgb(139, 180, 74);
@@ -168,6 +135,11 @@
     border-top: 3px solid;
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.aboutus-panel:hover .slideup-effect {
+    transform: translateY(-218px);
+    transition: 0.5s;
 }
 
 /* Team */
@@ -267,38 +239,192 @@
 
 /* Our journey */
 .journey-container {
-    background-color: rgb(53, 53, 53);
-    padding: 55px 20px;
+    padding: 40px 0;
+}
+.journey-container .timeline-container {
+    position: relative;
+    height: 270px;
+    overflow-y: hidden;
 }
 
-.journey-content .timeline-column {
-    min-height: 250px;
-}
-@media(min-width: 992px) and (max-width: 1199px) {
-    .journey-content .timeline-column {
-        min-height: 300px;
-    }
+.timeline-curve {
+    position: relative;
+    height: 700px;
+    border: 10px solid rgb(231, 231, 231);
+    border-radius: 200% 200% 0 0;
 }
 
-.journey-content h6 {
+.timeline-dot {
+    position: absolute;
+}
+.timeline-dot i {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border: 8px solid rgb(217, 93, 51);
+    border-radius: 50%;
+    background: #fff;
+    margin: -6px 10px;
+}
+.big-dot i {
+    transition: 0.5s;
+    transform: scale(1.5, 1.5);
+}
+.timeline-dot span {
+    font-weight: bold;
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.t-dot1 {
+    top: 165px;
+    left: -25px;
+}
+.t-dot2 {
+    top: 85px;
+    left: 70px;
+}
+.t-dot3 {
+    top: 25px;
+    left: 190px;
+}
+.t-dot4 {
+    top: -10px;
+    left: 335px;
+}
+.t-dot5 {
+    top: 165px;
+    right: -25px;
+}
+.t-dot6 {
+    top: 85px;
+    right: 70px;
+}
+.t-dot7 {
+    top: 25px;
+    right: 190px;
+}
+.t-dot8 {
+    top: -10px;
+    right: 335px;
+}
+.t-dot9 {
+    top: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#timeline-main-box {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-weight: bold;
     font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
+    width: 55%;
 }
 
-.active-journey-content {
-    color: #fff;
+.mobile-timeline-yr h3 {
+    margin-bottom: 12px;
 }
-.jr-ruler {
-    opacity: 0;
+.mobile-timeline ul {
+    padding-left: 15px;
+    position: relative;
+    list-style: none;
+    margin-top: -8px;
+    margin-bottom: 5px;
 }
-.journey-ruler {
-    opacity: 1;
-    border-top: 4px solid red;
-    border-radius: 5px;
-    width: 90%;
+.mobile-timeline ul li {
+    font-size: 16px;
+    line-height: 22px;
     margin: 15px 0;
 }
+.mobile-timeline ul li::before {
+    content: "\2022";
+    color: rgb(217, 93, 51);
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 65px;
+    display: inline-block;
+    width: 1em;
+    margin-left: -30px;
+    position: absolute;
+}
+.mobile-timeline .mobile-timeline-border {
+    border-left: 5px solid rgb(231, 231, 231);
+    padding-left: 15px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+/* --------------------------------------------------- */
+/* Centre of excellence */
+
+.breadcrumb-custom {
+    padding-left: 0;
+}
+.breadcrumb-custom>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: ">";
+}
+.breadcrumb-custom li {
+    display: inline-block;
+    font-size: 12px;
+}
+.breadcrumb-custom a {
+    color: #fff;
+}
+.breadcrumb-custom a:hover {
+    text-decoration: underline;
+}
+
+.header-strip {
+    position: relative;
+}
+.header-strip img {
+    position: absolute;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.features-list {
+    padding-left: 15px;
+}
+.features-list li {
+    margin-top: 15px;
+}
+
+
+.t2s-panel {
+    position: relative;
+    border-radius: 0;
+    border-bottom: 10px solid rgb(139, 180, 74);
+    overflow: hidden;
+}
+.t2s-content {
+    padding: 15px; 
+    position: absolute;
+    bottom: -165px;
+}
+.t2s-panel h4 {
+    font-size: 30px;
+}
+.t2s-panel .desc-height-t2s {
+    min-height: 80px;
+}
+.t2s-panel hr {
+    border-top: 3px solid;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.t2s-panel:hover .slideup-effect-t2s {
+    transform: translateY(-160px);
+    transition: 0.5s;
+}
+
+/* --------------------------------------------------- */
 
 /* Footer */
 .footer-container {
@@ -362,10 +488,6 @@
     font-size: 17px;
 }
 
-.aboutus-panel:hover .slideup-effect {
-    transform: translateY(-218px);
-    transition: 0.5s;
-}
 
 .mt40 {
     margin-top: 40px;
