@@ -384,7 +384,7 @@
 }
 
 /* --------------------------------------------------- */
-/* Centre of excellence */
+/* Centre of excellence / Soft / Learning */
 
 .breadcrumb-custom {
     padding-left: 0;
@@ -433,6 +433,11 @@
     position: absolute;
     bottom: -165px;
 }
+@media(max-width:767px) {
+    .t2s-content {
+        bottom: 0px;
+    }
+}
 .t2s-panel h4 {
     font-size: 30px;
 }
@@ -448,6 +453,61 @@
     transform: translateY(-160px);
     transition: 0.5s;
 }
+
+/* -------------------------------------------------- */
+/* Gallery */
+
+.gallery-column {
+    margin: 7px 0;
+    display: none; 
+}
+.show {
+    display: block;
+}
+
+#myBtnContainer .active {
+    box-shadow: none;
+}
+
+.btn-gallery {
+    background: none;
+    box-shadow: none;
+    color: coral;
+    font-size: 16px;
+    border-bottom: 1px solid coral;
+    line-height: 30px;
+    border-radius: 0;
+    padding: 0;
+    margin: 5px 10px;
+}
+.btn-gallery:focus, .btn-gallery:link, .btn-gallery:visited, .btn-gallery:active {
+    outline: 0 !important;
+    color: coral;
+    box-shadow: none;
+}
+.btn-gallery:hover {
+    color: purple;
+    border-bottom-color: purple;
+}
+
+.gallery-pics:hover {
+    cursor: pointer;
+}
+
+.gallery-modal-close {
+    color: #fff;
+    font-size: 60px;
+    opacity: 1;
+    background: none;
+    border: 0;
+    position: absolute;
+    top: -50px;
+    right: 0;
+    z-index: 1000;
+    outline: 0 !important;
+}
+
+
 
 /* --------------------------------------------------- */
 

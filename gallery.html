@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>T2S Group</title>
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid hidden-xs">
+            <div class="row main-navbar">
+                <div class="col-6 col-md-6 col-sm-12 col-xs-12">
+                    <p><i class="fa fa-map-marker"></i> &nbsp; <a href="javascript:void(0);">Indicube Orion, 24th Main, sector 2, HSR layout, Bangalore-560102.</a></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <p><i class="fa fa-envelope"></i> &nbsp; <a href="mailto:vijay.plakkat@t2sgroup.co.in">vijay.plakkat@t2sgroup.co.in</a></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                    <p><i class="fa fa-phone"></i> &nbsp; <a href="tel:+919741107978">+91 97411 07978</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-spacing" style="margin-left: 130px;">
+            <div class="container-fluid" style="background-color: #fff;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ourNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#" style="position: relative"><img src="./image/logo.png" alt="t2s group"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="ourNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">HOME</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">T2S GROUP
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <i class="fa fa-caret-up" style="display: none;"></i>
+                            <li><a href="t2s_centre_of_excellence.html" class="text-center-lg text-center-md">T2S Centre of Excellence</a></li>
+                            <li><a href="t2s_soft.html" class="text-center-lg text-center-md">T2S Soft</a></li>
+                            <li><a href="t2s_learning.html" class="text-center-lg text-center-md">T2S Learning</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="active" href="gallery.html">GALLERY</a></li>
+                    <li><a href="/#clients-container">CLIENTS</a></li>
+                    <li><a href="#">ENQUIRY</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </nav>
+
+    <div class="gallery-container" style="margin-top: 175px;">
+        <div class="container">
+            <p class="small-header text-center clr-black">T2S GROUP</p>
+            <h3 class="strong-header text-center clr-black">Gallery</h3>
+
+            <div id="myBtnContainer" class="text-center hidden-xs mt25">
+                <button class="btn btn-gallery active" onclick="filterSelection('all')">ALL</button>
+                <button class="btn btn-gallery" onclick="filterSelection('coe')">T2S CENTRE OF EXCELLENCE</button>
+                <button class="btn btn-gallery" onclick="filterSelection('soft')">T2S SOFT</button>
+                <button class="btn btn-gallery" onclick="filterSelection('learning')">T2S LEARNING</button>
+            </div>
+
+            <br />
+
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe1.jpg" alt="Mountains" class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe2.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe3.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe4.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe5.jpg" alt="Mountains" class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe6.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe7.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe8.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe9.jpg" alt="Mountains" class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe10.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe11.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe12.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe13.jpg" alt="Mountains" class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe14.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe15.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe16.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe17.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe18.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
+                    <div class="content">
+                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe19.jpg" alt="Mountains"  class="img-responsive" /></a>
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="background:transparent;border:0;box-shadow:none;margin-top:75px;">
+                <div class="modal-header" style="padding:0;border-bottom:0;">
+                    <button type="button" class="gallery-modal-close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>    
+
+    <div class="footer-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb15">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-2 col-xs-2">
+                            <img src="./image/logo.png" alt="t2s logo" class="img-responsive" />
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-10 col-xs-10">
+                            <p class="footer-clr-grey footer-f12 mt10" style="width: 85%">Our core expertise lies in bringing the knowledge repository from the pioneers in Industry to benefit academia and corporate, using technology as a key enabler.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <p style="margin-left: 15px;" class="footer-clr-grey footer-f12 social-links-left mt10">Follow Us on 
+                            <a href="https://www.fb.com"><i class="fa fa-facebook clr-white" style="background:#000;padding:2px 4px 0 4px;border-radius:2px"></i></a>
+                            <a href="https://www.instagram.com"><i class="fa fa-instagram clr-black" style="font-size:16px;"></i></a>
+                            <a href="https://www.twitter.com"><i class="fa fa-twitter clr-white" style="background:#000;padding:3px 2px 0px  3px;border-radius:2px"></i></a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 footer-center-left mb15">
+                    <p class="text-bold footer-f12 mb15">Quick Links</p>
+                    <a href="#" class="footer-clr-grey footer-f12">Home</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Services</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Testimonials</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Clients</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Contact</a>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-6 col-xs-6 footer-center-right mb15">
+                    <p class="text-bold footer-f12 mb15">Quick Links</p>
+                    <a href="#" class="footer-clr-grey footer-f12">Terms and Conditions</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Privacy Policy</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Support</a>
+                    <a href="#" class="footer-clr-grey footer-f12">Help</a>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mb15">
+                    <p class="text-bold footer-f12 mb15">Contact Us</p>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                            <div style="position:relative">
+                                <i class="fa fa-map-marker" style="position:absolute;font-size:24px;"></i>
+                                <p style="padding-left:30px;" class="footer-clr-grey footer-f12">Indicube Orion, <br />
+                                24th Main, sector 2, <br />
+                                HSR layout, <br />
+                                Bangalore-560102.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 footer-right-right">
+                            <div style="position:relative">
+                                <i class="fa fa-envelope" style="position:absolute;font-size:20px;"></i>
+                                <a href="mailto:vijay.plakkat@t2sgroup.co.in" style="padding-left:30px;">vijay.plakkat@t2sgroup.co.in</a>
+                            </div>
+                            <br />
+                            <div style="position:relative">
+                                <i class="fa fa-phone" style="position:absolute;font-size:20px;"></i>
+                                <a href="tel:+919741107978" style="padding-left:30px;">+91 97411 07978</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <p class="footer-f12 footer-clr-grey text-right">© 2020 All rights reserved by Popcon Design Studio.</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    </style>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
