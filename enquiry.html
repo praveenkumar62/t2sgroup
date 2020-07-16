@@ -49,9 +49,9 @@
                             <li><a href="t2s_learning.html" class="text-center-lg text-center-md">T2S Learning</a></li>
                         </ul>
                     </li>
-                    <li><a class="active" href="gallery.html">GALLERY</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
                     <li><a href="index.html#clients-container">CLIENTS</a></li>
-                    <li><a href="enquiry.html">ENQUIRY</a></li>
+                    <li><a class="active" href="enquiry.html">ENQUIRY</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,129 +61,82 @@
     <div class="gallery-container" style="margin-top: 175px;">
         <div class="container">
             <p class="small-header text-center clr-black">T2S GROUP</p>
-            <h3 class="strong-header text-center clr-black">Gallery</h3>
+            <h3 class="strong-header text-center clr-black">Enquiry</h3>
 
-            <div id="myBtnContainer" class="text-center hidden-xs mt25">
-                <button class="btn btn-gallery active" onclick="filterSelection('all')">ALL</button>
-                <button class="btn btn-gallery" onclick="filterSelection('coe')">T2S CENTRE OF EXCELLENCE</button>
-                <button class="btn btn-gallery" onclick="filterSelection('soft')">T2S SOFT</button>
-                <button class="btn btn-gallery" onclick="filterSelection('learning')">T2S LEARNING</button>
+            <div class="contact-container">
+                <div class="container">
+        
+                    <br />
+        
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="contact-form padding-30">
+                                <h3>Just Say Hello!</h3>
+                                <p>Let us know more about you.</p>
+                                <br />
+                                <div class="row">
+                                    <form action="mail.php" method="post" name="contact-form">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" class="contact-input" name="name" placeholder="First Name" required />
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                            <input type="number" class="contact-input" name="phone" placeholder="Phone" required />
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <input type="email" class="contact-input" name="email" placeholder="Email" required />
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <textarea class="contact-input" placeholder="Message" name="message" required style="height:60px"></textarea>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <button type="submit" name="submit" class="btn btn-contact-send">Send</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="our-contact">
+                                <h2>Contact Information</h2>
+                                <p class="contact-details">
+                                    <i class="fa fa-map-marker"></i> <span>&nbsp;&nbsp;Indicube Orion, 24th Main, sector 2, <br/>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HSR layout, Bangalore-560102.</span>
+                                </p>
+                                <p class="contact-details"> 
+                                    <i class="fa fa-envelope-o"></i> <a href="mailto:info@t2sgroup.co.in">info@t2sgroup.co.in</a>
+                                </p>
+                                <p class="contact-details">
+                                    <i class="fa fa-phone"></i> <a href="tel:+91 97411 07978">+91 97411 07978</a>
+                                </p>
+                                <br />
+                                <h2>Follow Us</h2>
+                                <p class="social-menus">
+                                    <a href='#'><i class="fa fa-facebook"></i></a>
+                                    <a href='https://www.fb.com'><i class="fa fa-instagram"></i></a>
+                                    <a href='https://www.linkedin.com/company/second-income'><i class="fa fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.0571826841197!2d77.64659511461092!3d12.904044619848982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15d4d153d93d%3A0x7f4ba39771b3d9a2!2sIndiQube%20Orion!5e0!3m2!1sen!2sin!4v1594923677175!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;box-shadow:1px 3px 10px #aaa;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                </div>            
             </div>
-
-            <br />
-
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe1.jpg" alt="Mountains" class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe2.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe3.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe4.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe5.jpg" alt="Mountains" class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe6.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe7.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe8.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe9.jpg" alt="Mountains" class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe10.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe11.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe12.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe13.jpg" alt="Mountains" class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe14.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe15.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe16.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe17.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe18.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 gallery-column coe">
-                    <div class="content">
-                        <a class="gallery-pics" data-toggle="modal" data-target="#myModal"><img src="./image/gallery/coe19.jpg" alt="Mountains"  class="img-responsive" /></a>
-                    </div>
-                </div>
-            </div>    
         </div>
 
     </div>
-
-    <div class="modal fade" id="myModal" role="dialog">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content" style="background:transparent;border:0;box-shadow:none;margin-top:75px;">
-                <div class="modal-header" style="padding:0;border-bottom:0;">
-                    <button type="button" class="gallery-modal-close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                </div>
-            </div>
-        </div>
-    </div>    
+   
 
     <div class="footer-container">
         <div class="container-fluid">

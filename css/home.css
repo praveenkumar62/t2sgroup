@@ -474,11 +474,13 @@
     box-shadow: none;
     color: coral;
     font-size: 16px;
-    border-bottom: 1px solid coral;
     line-height: 30px;
     border-radius: 0;
     padding: 0;
     margin: 5px 10px;
+}
+.btn-gallery.active {
+    border-bottom: 1px solid coral;
 }
 .btn-gallery:focus, .btn-gallery:link, .btn-gallery:visited, .btn-gallery:active {
     outline: 0 !important;
@@ -508,6 +510,124 @@
 }
 
 
+  /* ------------------- Contact ------------------ */
+  .contact-form {
+    border: 1px solid #eee;
+    border-radius: 7px;
+    padding: 30px;
+    box-shadow: 1px 2px 6px #ddd;
+  }
+  .contact-form h3 {
+    color: rgb(224,108,60);
+    margin-top: 10px;
+  }
+  .contact-input {
+    width: 100%;
+    height: 37px;
+    border: 0;
+    margin: 10px 0;
+    border-bottom: 1px solid #bbb;
+  }
+  .contact-input:focus {
+    outline: 0;
+  }
+  .contact-input::-webkit-input-placeholder { /* Edge */
+    text-indent: 8px;
+  }
+  .contact-input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    text-indent: 8px;
+  }
+  .contact-input::placeholder {
+    text-indent: 8px;
+  }
+  
+  @media (min-width: 992px) {
+    .our-contact {
+      padding: 0 70px;
+    }
+  }
+  .our-contact h2 {
+    color: rgb(224,108,60);
+  }
+  
+  .contact-form .btn-contact-send {
+    padding: 5px 20px;
+    background: rgb(224,108,60);
+    color: #fff;
+    display: block;
+    margin: 20px auto;
+    margin-bottom: 0;
+  }
+  .contact-form .btn-contact-send:focus {
+    outline: 0;
+  }
+  
+  .contact-details, .contact-links {
+    margin-top: 15px;
+  }
+  .contact-details .fa{
+    color: rgb(224,108,60);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .contact-details a {
+    text-decoration: none;
+    margin-left: 4px;
+    color: #252525;
+  }
+  .contact-details a:hover {
+    color: blue;
+  }
+  
+  .contact-links .fa {
+    font-size: 18px;
+    margin: 0 9px;
+    border: 1px solid rgb(224,108,60);
+    background: rgb(224,108,60);
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    width: 41px;
+    text-align: center;
+    background-color: #fff;
+    color: rgb(224,108,60);
+    cursor: pointer;
+  }
+  .contact-links .fa:hover {
+    background-color: rgb(224,108,60);
+    color: #fff;
+  }
+  
+  @media(max-width: 500px) {
+    .contact-details {
+      text-align: center;
+    }
+    .contact-links {
+      text-align: center;
+    }
+  }
+
+.social-menus .fa-facebook {
+    background: #3b5998;
+    color: #fff;
+    padding: 17px 20px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.social-menus .fa-instagram {
+    background: #F77737;
+    color: #fff;
+    padding: 17px 18px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.fa-linkedin {
+    background: #4875B4;
+    color: #fff;
+    padding: 17px 18px;
+    border-radius: 50%;
+    margin: 5px;
+}
 
 /* --------------------------------------------------- */
 

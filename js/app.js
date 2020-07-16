@@ -102,26 +102,47 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-    for (var i = 0; i < btns.length; i++) {
-      btns[i].addEventListener("click", function(){
-        var current = document.getElementsByClassName("active");
-        current[0].className = current[0].className.replace(" active", "");
-        this.className += " active";
-      });
-    }
+// var btnContainer = document.getElementById("myBtnContainer");
+// var btns = btnContainer.getElementsByClassName("btn-gallery");
+//     for (var i = 0; i < btns.length; i++) {
+//       btns[i].addEventListener("click", function(){
+//         var current = document.getElementsByClassName("active");
+//         current[0].className = current[0].className.replace(" active", "");
+//         this.className += " active";
+//       });
+//     }
 
 
 // var btnContainer = document.getElementById("myBtnContainer");
-// var btns = btnContainer.getElementsByClassName("btn");
+// var btns = btnContainer.getElementsByClassName("btn-gallery");
 // for (var i = 0; i < btns.length; i++) {
 //   btns[i].addEventListener("click", function(){
-//     var current = document.getElementsByClassName("active");
+//     var current = document.getElementsByClassName("btn-gallery");
+//     for(var j=0;j<current.length;j++) {
+      
 //     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
+//   }
+//     $(this).addClass('active');
+//       // alert($(this).attr('class'));
 //   });
 // }
+
+// $('#myBtnContainer .btn-gallery').each(function() {
+  $('.btn-gallery').click(function() {
+    $(this).addClass('selected-btn');
+    $('#myBtnContainer .btn-gallery').each(function() {
+      if($(this).hasClass('active')) {
+        $(this).removeClass('active');
+      }
+    });
+    $('#myBtnContainer .btn-gallery').each(function() {
+      if($(this).hasClass('selected-btn')) {
+        $(this).removeClass('selected-btn');
+        $(this).addClass('active');
+      }
+    });
+  })
+// });
 
 $('.gallery-pics').click(function() {
     var self = $(this);
