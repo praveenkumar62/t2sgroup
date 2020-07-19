@@ -159,3 +159,4 @@ $('.gallery-pics').click(function() {
     
 });
 
+// Author: Praveenkumar C 
