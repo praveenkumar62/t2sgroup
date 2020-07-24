@@ -23,7 +23,8 @@
 
 .navbar-brand img{
     position: fixed;
-    top: 33px;
+    top: 7px;
+    /* top: 33px; */
     left: 20px;
     width: 100px;
 }
