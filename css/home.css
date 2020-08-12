@@ -213,6 +213,19 @@
     transform: translateX(0px);
 }
 
+.team-box {
+    background: #fafafa;
+    padding: 15px 30px;
+    font-style: italic;
+    border-radius: 10px;
+}
+.team-box p:first-child {
+    line-height: 38px;
+}
+/* .team-box span {
+    display: block;
+} */
+
 /* Clients */
 .clients-container {
     background-color: #000;
