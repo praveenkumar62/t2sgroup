@@ -171,7 +171,7 @@
 /* Team */
 .team-container {
     background-color: rgb(238, 238, 238);
-    padding: 80px 0;
+    padding: 40px 0 60px 0;
 }
 
 .team-container .overlay-container {
@@ -218,6 +218,7 @@
     padding: 15px 30px;
     font-style: italic;
     border-radius: 10px;
+    min-height: 315px;
 }
 .team-box p:first-child {
     line-height: 38px;
@@ -320,37 +321,45 @@
     left: -25px;
 }
 .t-dot2 {
-    top: 85px;
-    left: 70px;
+    top: 105px;
+    left: 40px;
 }
 .t-dot3 {
-    top: 25px;
-    left: 190px;
+    top: 50px;
+    left: 140px;
 }
 .t-dot4 {
-    top: -10px;
-    left: 335px;
+    top: 10px;
+    left: 245px;
 }
 .t-dot5 {
-    top: 165px;
-    right: -25px;
+    top: 50px;
+    right: 140px;
 }
 .t-dot6 {
-    top: 85px;
-    right: 70px;
+    top: 10px;
+    right: 245px;
 }
 .t-dot7 {
-    top: 25px;
-    right: 190px;
+    top: -15px;
+    right: 370px;
 }
 .t-dot8 {
-    top: -10px;
-    right: 335px;
-}
-.t-dot9 {
     top: -65px;
     left: 50%;
     transform: translateX(-50%);
+}
+.t-dot9 {
+    top: -15px;
+    left: 370px;
+}
+.t-dot10 {
+    top: 105px;
+    right: 40px;
+}
+.t-dot11 {
+    top: 165px;
+    right: -25px;
 }
 
 #timeline-main-box {
