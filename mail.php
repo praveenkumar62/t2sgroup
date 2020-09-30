@@ -40,7 +40,7 @@
         </html>';
 
     $headers = array(
-        'Authorization: Bearer <enter my api>',
+        'Authorization: Bearer <add api key>',
         'Content-Type: application/json'
     );
 
